@@ -1,0 +1,5 @@
+.nav-section {
+    display: flex;
+    gap: 20px;
+    margin: 50px;
+}
