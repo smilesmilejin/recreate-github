@@ -16,6 +16,8 @@
 
 
 // solution
+import './NewsletterForm.css';
+
 const NewsletterForm = () => {
   return (
     <form className="NewsletterForm">

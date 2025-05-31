@@ -26,6 +26,8 @@
 // }
 
 // Solution
+import './NavigationBar.css';
+
 const NavigationBar = () => {
   return (
     <nav className="NavigationBar">

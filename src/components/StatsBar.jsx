@@ -19,6 +19,8 @@
 // }
 
 // solution
+import './StatsBar.css';
+
 const StatsBar = () => {
   return (
     <div className="StatsBar">

@@ -1,5 +1,11 @@
-.nav-section {
+/* Selects only ul elements that are direct children of an element with class NavigationBar. */
+.NavigationBar > ul {
     display: flex;
-    gap: 20px;
-    margin: 50px;
+    padding: 0px;
+    justify-content: space-between;
+}
+
+.NavigationBar li {
+    list-style-type: none;
+    padding-right: 1em;
 }

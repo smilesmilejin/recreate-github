@@ -1,42 +1,38 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.App {
+  padding-left:2em; /* Adds spacing to the left */
+  color: white; /* Sets text color */
+  min-height: 100vh;
+  display:grid; /* Enables CSS Grid */
+  grid-template:
+    "nav" auto /* Row 1: Area named `nav`, height auto */
+    "hero" auto  /* Row 2: Area named `hero`, height auto  */
+    "newsletter" auto /* Row 3: Area named `newsletter`, height auto  */
+    "." minmax(4em, 1fr) /* Row 4: Spacer row (unnamed area), at least 4em high   */
+    /* Row 5: Area named `stats`, height auto */
+    "stats" auto / minmax(850px, 1fr); /* One column: min width 850px, max 1fr (fills space) */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.App a {
+  text-decoration: none;
+  color:white;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App a:hover {
+  text-decoration: underline;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.App > .top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.card {
-  padding: 2em;
+.App .site-tools {
+  display: flex;
+  align-items: center;
 }
 
-.read-the-docs {
-  color: #888;
-} */
+.App .StatsBar {
+  /* It places the .StatsBar element into the stats area of your .App grid layout. */
+  grid-area: stats;
+}

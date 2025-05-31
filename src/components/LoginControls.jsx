@@ -15,6 +15,8 @@
 // }
 
 // solution
+import './LoginControls.css';
+
 const LoginControls = () => {
   return (
     <ul className="LoginControls">
